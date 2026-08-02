@@ -1,79 +1,68 @@
-# Tic-Tac-Toe Game
+# RoboFleet Database System
 
 ## Overview
 
-A simple console-based Tic-Tac-Toe game built using C++. The game allows two players to enter their names, take turns placing their symbols on a 3×3 board, and automatically detects a win or a draw.
+RoboFleet is a relational database system designed to manage a fleet of robots. It stores information about robots, locations, missions, sensors, and sensor readings using SQL and relational database principles.
 
-This project demonstrates object-oriented programming concepts, game logic implementation, and basic C++ programming skills.
+This project demonstrates database design, data modeling, and SQL query implementation through a structured relational schema.
 
 ---
 
 ## Features
 
-* Two-player gameplay
-* Player name input
-* Turn-based gameplay
-* Interactive console interface
-* Automatic win detection
-* Draw detection
-* 3×3 board management
+* Store and manage robot information
+* Track robot locations
+* Manage missions and assignments
+* Store sensor details and readings
+* Retrieve data using SQL queries
+* Maintain data integrity using primary and foreign keys
 
 ---
 
 ## Technologies Used
 
-* C++
-* Object-Oriented Programming (OOP)
+* SQL
+* SQLite
+* Relational Database Design
+* Entity Relationship Diagram (ERD)
+* Git & GitHub
 
 ---
 
-## Concepts Used
+## Database Tables
 
-* Classes and Objects
-* Constructors
-* Functions
-* Arrays
-* Loops
-* Conditional Statements
+The database consists of the following tables:
 
----
-
-## Project Structure
-
-```
-Tic-Tac-Toe/
-├── main.cpp
-├── TicTacToe.h
-├── TicTacToe.cpp
-└── README.md
-```
+* **Robots** – Stores robot details.
+* **Locations** – Stores location information.
+* **Missions** – Stores mission details.
+* **Sensors** – Stores sensors installed on robots.
+* **Sensor_Readings** – Stores data collected from sensors.
 
 ---
 
-## How to Run
+## Relationships
 
-1. Clone the repository.
-2. Open the project in any C++ IDE or editor.
-3. Compile the source files using a C++ compiler.
-4. Run the executable and start playing.
+* One location can have multiple robots.
+* One robot can have multiple sensors.
+* One robot can be assigned multiple missions.
+* One sensor can have multiple sensor readings.
+* Primary and foreign keys maintain relationships between tables.
 
 ---
 
-## Future Improvements
+## Entity Relationship Diagram (ERD)
 
-* Single-player mode with AI
-* Score tracking
-* Input validation
-* Better console UI
-* Option to restart the game
+![RoboFleet ER Diagram](robofleet-erd.png)
 
 ---
 
 ## Learning Outcomes
 
-Through this project, I practiced:
+Through this project, I learned how to:
 
-* Applying object-oriented programming principles
-* Organizing code using header and source files
-* Implementing game logic in C++
-* Improving problem-solving and debugging skills
+* Design a relational database schema
+* Create relationships between tables
+* Use primary and foreign keys
+* Write SQL queries for data retrieval
+* Apply database normalization concepts
