@@ -1,136 +1,79 @@
-# RoboFleet Database System 
+# Tic-Tac-Toe Game
 
 ## Overview
 
-RoboFleet is a relational database system designed to manage and organize information for a fleet of robots. The database stores details about robots, their locations, assigned missions, sensors, and sensor readings.
+A simple console-based Tic-Tac-Toe game built using C++. The game allows two players to enter their names, take turns placing their symbols on a 3×3 board, and automatically detects a win or a draw.
 
-The goal of this project is to demonstrate how database systems can be designed to manage complex real-world data using relational database concepts, SQL queries, and structured data relationships.
-
-This project focuses on database design, data organization, and efficient retrieval of information using SQL.
-
----
-
-## Problem Statement
-
-Managing a large fleet of robots requires an organized system to store and track important information such as:
-
-- Robot specifications
-- Current locations
-- Mission assignments
-- Sensor information
-- Sensor-generated data
-
-The RoboFleet Database provides a structured solution for storing and managing this information while maintaining data consistency through relationships between tables.
+This project demonstrates object-oriented programming concepts, game logic implementation, and basic C++ programming skills.
 
 ---
 
 ## Features
 
-- Store and manage robot details
-- Track robot locations
-- Create and manage missions
-- Assign robots to missions
-- Store sensor information
-- Record sensor readings
-- Retrieve information using SQL queries
-- Maintain relationships between different data entities
-- Use primary keys and foreign keys for data integrity
+* Two-player gameplay
+* Player name input
+* Turn-based gameplay
+* Interactive console interface
+* Automatic win detection
+* Draw detection
+* 3×3 board management
 
 ---
 
-# Database Design
+## Technologies Used
 
-The database follows a relational database model consisting of the following entities:
-
-## Robots
-
-Stores information about each robot in the fleet.
-
-**Attributes include:**
-- Robot ID
-- Robot name
-- Model
-- Status
-- Battery level
-- Location information
+* C++
+* Object-Oriented Programming (OOP)
 
 ---
 
-## Locations
+## Concepts Used
 
-Stores information about robot locations.
-
-**Attributes include:**
-- Location ID
-- Location name
-- Coordinates
-- Area information
-
----
-
-## Missions
-
-Stores details about robot tasks and assignments.
-
-**Attributes include:**
-- Mission ID
-- Mission name
-- Description
-- Start date
-- End date
-- Mission status
+* Classes and Objects
+* Constructors
+* Functions
+* Arrays
+* Loops
+* Conditional Statements
 
 ---
 
-## Sensors
+## Project Structure
 
-Stores information about sensors installed on robots.
-
-**Attributes include:**
-- Sensor ID
-- Robot ID
-- Sensor type
-- Installation date
-
----
-
-## Sensor Readings
-
-Stores data collected from robot sensors.
-
-**Attributes include:**
-- Reading ID
-- Sensor ID
-- Reading value
-- Timestamp
+```
+Tic-Tac-Toe/
+├── main.cpp
+├── TicTacToe.h
+├── TicTacToe.cpp
+└── README.md
+```
 
 ---
 
-# Entity Relationship Diagram (ERD)
+## How to Run
 
-The database structure and relationships are represented using an Entity Relationship Diagram.
-
-![RoboFleet ER Diagram](robofleet-erd.png)
-
----
-
-# Relationships
-
-The database contains the following relationships:
-
-- One robot can have one or multiple sensors.
-- One robot can perform multiple missions.
-- One location can contain multiple robots.
-- One sensor can generate multiple sensor readings.
-- Foreign keys are used to connect related tables.
+1. Clone the repository.
+2. Open the project in any C++ IDE or editor.
+3. Compile the source files using a C++ compiler.
+4. Run the executable and start playing.
 
 ---
 
-# Technologies Used
+## Future Improvements
 
-- SQL
-- SQLite
-- Relational Database Management Systems (RDBMS)
-- Database Schema Design
-- Entity Relationship Diagrams (ERD)
-- Git and GitHub
+* Single-player mode with AI
+* Score tracking
+* Input validation
+* Better console UI
+* Option to restart the game
+
+---
+
+## Learning Outcomes
+
+Through this project, I practiced:
+
+* Applying object-oriented programming principles
+* Organizing code using header and source files
+* Implementing game logic in C++
+* Improving problem-solving and debugging skills
