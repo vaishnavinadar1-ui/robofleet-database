@@ -1,4 +1,4 @@
-# RoboFleet Database System 🤖
+# RoboFleet Database System 
 
 ## Overview
 
